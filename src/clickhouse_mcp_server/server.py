@@ -44,6 +44,8 @@ class ClickHouseContext:
                 'port': self.port,
                 'user': self.user,
                 'password': self.password,
+                'secure':True,
+                'verify':False,
                 # Convert bool to int
                 'settings': {'readonly': 1 if self.readonly else 0}
             }
